@@ -37,7 +37,8 @@ feature {
   text-indent: -2em;
   padding-left: 5%;
   padding-top: 1%;
-  background-color: #999999;
+  background-color: #000000;
+  border-style: solid;
   top: 50%;
   left: 0px;
   height: 50%;
