@@ -19,6 +19,7 @@ feature {
   bottom: 0;
   left: 0;
   right: 0;
+  cursor: url('https://github.com/basarat/demo-custom-cursor/blob/master/src/cursors/nyan-cursor.png'), auto;
 }
 
 #shopFace {
@@ -35,8 +36,8 @@ feature {
 }
 
 .faceSprite {
-  position: absolute;
   image-rendering: pixelated;
+  position: absolute;
   bottom: 0px;
   left: 50%;
   transform: translate(-50%);
@@ -51,6 +52,22 @@ feature {
 #temmiebox {
   width: 327px;
   height: 153px;
+}
+
+#yapBox {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  text-align: left;
+  background-color: #000;
+  top: 50%;
+  left: 0px;
+  height: 50%;
+  width: 100%;
+  max-height: 50%;
+  max-width: 100%;
+  border: 5px solid #fff;
 }
 
 #dialogueBox {
@@ -72,6 +89,8 @@ feature {
 #dialogue {
   word-wrap: break-word;
   text-indent: -2em;
+  margin: 20px;
+  margin-top: 20px;
   padding-left: 6%;
   padding-top: 0%;
   max-height: 100%;
@@ -91,6 +110,15 @@ feature {
   max-height: 50%;
   max-width: 30%;
   border: 5px solid #fff;
+}
+
+.interactionOption {
+  font-size: 40px;
+  max-width: 95%;
+  color: #fff;
+  font-family: 'DeterminationMono';
+  background-color: #00000000;
+  border: none;
 }
 
 #money {
