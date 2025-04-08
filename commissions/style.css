@@ -1,107 +1,107 @@
 html, body {
-  background-color: #000;
-  text-align: center;
+  background-color: #000;
+  text-align: center;
 }
 
 @font-face {
-  font-family: 'DeterminationMono';
-  src: url('assets/fonts/determination-mono.ttf');
+  font-family: 'DeterminationMono';
+  src: url('assets/fonts/determination-mono.ttf');
 }
 
 feature {
-  width: 100vw;
-  height: 75vw;
-  max-height: 100vh;
-  max-width: 133.33vh;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100vw;
+  height: 75vw;
+  max-height: 100vh;
+  max-width: 133.33vh;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #shopFace {
-  position: absolute;
-  background-color: #000;
-  background-image: url("assets/sprites/shop/background.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  image-rendering: pixelated;
-  top: 0px;
-  left: 0px;
-  height: 50%;
-  width: 100%;
+  position: absolute;
+  background-color: #000;
+  background-image: url("assets/sprites/shop/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  top: 0px;
+  left: 0px;
+  height: 50%;
+  width: 100%;
 }
 
 .faceSprite {
-  position: absolute;
-  image-rendering: pixelated;
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%);
+  position: absolute;
+  image-rendering: pixelated;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 #temmieidle {
-  transform: translate(-60%, -100px);
-  width: 273px;
-  height: 255px;
+  transform: translate(-60%, -100px);
+  width: 273px;
+  height: 255px;
 }
 
 #temmiebox {
-  width: 327px;
-  height: 153px;
+  width: 327px;
+  height: 153px;
 }
 
 #dialogueBox {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  position: absolute;
-  text-align: left;
-  background-color: #000;
-  top: 50%;
-  left: 0px;
-  height: 50%;
-  width: 70%;
-  max-height: 50%;
-  max-width: 70%;
-  border: 5px solid #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  text-align: left;
+  background-color: #000;
+  top: 50%;
+  left: 0px;
+  height: 50%;
+  width: 70%;
+  max-height: 50%;
+  max-width: 70%;
+  border: 5px solid #fff;
 }
 
 #dialogue {
-  word-wrap: break-word;
-  text-indent: -2em;
-  padding-left: 6%;
-  padding-top: 0%;
-  max-height: 100%;
-  max-width: 100%;
+  word-wrap: break-word;
+  text-indent: -2em;
+  padding-left: 6%;
+  padding-top: 0%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 #interact {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  position: absolute;
-  background-color: #000;
-  top: 50%;
-  left: 70%;
-  height: 50%;
-  width: 30%;
-  max-height: 50%;
-  max-width: 30%;
-  border: 5px solid #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  background-color: #000;
+  top: 50%;
+  left: 70%;
+  height: 50%;
+  width: 30%;
+  max-height: 50%;
+  max-width: 30%;
+  border: 5px solid #fff;
 }
 
 #money {
-  position: absolute;
-  bottom: 0%;
-  left: 10%;
+  position: absolute;
+  bottom: 0%;
+  left: 10%;
 }
 
 .dialogueText {
-  font-size: 30px;
-  max-width: 95%;
-  color: #fff;
-  font-family: 'DeterminationMono';
+  font-size: 30px;
+  max-width: 95%;
+  color: #fff;
+  font-family: 'DeterminationMono';
 }
