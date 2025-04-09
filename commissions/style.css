@@ -1,5 +1,6 @@
 html, body {
   background-color: #000;
+  background-image: url('assets/sprites/background/tile.png');
   text-align: center;
 }
 
@@ -9,10 +10,13 @@ html, body {
 }
 
 feature {
+  border: 40px solid transparent;
+  border-image: url("assets/sprites/background/border.png") 32 round;
+  image-rendering: pixelated;
   width: 100vw;
   height: 75vw;
-  max-height: 100vh;
-  max-width: 133.33vh;
+  max-height: 90vh;
+  max-width: 120vh;
   margin: auto;
   position: absolute;
   top: 0;
@@ -54,7 +58,7 @@ feature {
   height: 153px;
 }
 
-#yapBox {
+#div100 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -70,7 +74,7 @@ feature {
   border: 5px solid #fff;
 }
 
-#dialogueBox {
+#div70 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -86,22 +90,23 @@ feature {
   border: 5px solid #fff;
 }
 
-#dialogue {
+.dialogue {
   word-wrap: break-word;
   text-indent: -2em;
   margin: 20px;
   margin-top: 20px;
-  padding-left: 6%;
+  padding-left: 40px;
   padding-top: 0%;
   max-height: 100%;
   max-width: 100%;
 }
 
-#interact {
+#div30 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   position: absolute;
+  text-align: left;
   background-color: #000;
   top: 50%;
   left: 70%;
@@ -110,6 +115,16 @@ feature {
   max-height: 50%;
   max-width: 30%;
   border: 5px solid #fff;
+}
+
+.interaction {
+  word-wrap: break-word;
+  margin: 20px;
+  margin-top: 20px;
+  padding-left: 40px;
+  padding-top: 0%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .interactionOption {

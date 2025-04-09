@@ -17,55 +17,92 @@
   </head>
 
   <body>
-  
 		<feature>
+      <script>
+        function progressDialogue(show, hide) {
+          var toShow = document.getElementById(show);
+          var toHide = document.getElementById(hide);
+          toShow.style.display = "block";
+          toHide.style.display = "none";
+        }
+        function showShowHideHide(show1, show2, hide1, hide2) {
+          var toShow1 = document.getElementById(show1);
+          var toShow2 = document.getElementById(show2);
+          var toHide1 = document.getElementById(hide1);
+          var toHide2 = document.getElementById(hide2);
+          toShow1.style.display = "block";
+          toShow2.style.display = "block";
+          toHide1.style.display = "none";
+          toHide2.style.display = "none";
+        }
+        function activeDiv100() {
+          var div30 = document.getElementById('div30');
+          var div70 = document.getElementById('div70');
+          var div100 = document.getElementById('div100');
+          div30.style.display = "none";
+          div70.style.display = "none";
+          div100.style.display = "block";
+        }
+        function unactiveDiv100() {
+          var div30 = document.getElementById('div30');
+          var div70 = document.getElementById('div70');
+          var div100 = document.getElementById('div100');
+          div30.style.display = "block";
+          div70.style.display = "block";
+          div100.style.display = "none";
+        }
+      </script>
 	    <div id="shopFace">
 	    	<div id="redrain0o0">
           <img class="faceSprite" id="temmieidle" src="assets/sprites/shop/temmieidle.png">
           <img class="faceSprite" id="temmiebox" src="assets/sprites/shop/temmiebox.png">
         </div>
 	    </div>
-	    <div id="yapBox">
-        <div id="dialogue">
+	    <div id="div100" style="display: none;">
+        <div class="dialogue" id="dialogue">
 	    	  <p class="dialogueText">*¾hOI!</p>
           <p class="dialogueText">*¾dis shop is undr construction, pls come back l8r</p>
         </div>
 	    </div>
-	    <div id="dialogueBox">
-        <div id="dialogue">
+	    <div id="div70" style="display: block;">
+        <div class="dialogue" id="rootDialogue" style="display: block;">
 	    	  <p class="dialogueText">*¾hOI!</p>
           <p class="dialogueText">*¾dis shop is undr construction, pls come back l8r</p>
         </div>
+        <div id="exitMenu1" style="display: none;">
+          <button onclick="location.href='https://redrain0o0.github.io/'" id="home" class="interactionOption">Home</button>
+          <br>
+          <button onclick="location.href='https://redrain0o0.github.io/RedRain0o0'" id="redrain0o0Page" class="interactionOption">RedRain0o0</button>
+          <br>
+          <button onclick="location.href='https://redrain0o0.github.io/projects'" id="projects" class="interactionOption">Projects</button>
+          <br>
+          <button id="nextExitMenu" class="interactionOption" onclick="progressDialogue('exitMenu2', 'exitMenu1')">Next</button>
+        </div>
+        <div id="exitMenu2" style="display: none;">
+          <button onclick="location.href='https://redrain0o0.github.io/the-gallery'" id="gallery" class="interactionOption">Gallery</button>
+          <br>
+          <button onclick="location.href='https://redrain0o0.github.io/'" id="discord" class="interactionOption">Discord</button>
+          <br>
+          <button onclick="location.href='https://ko-fi.com/redrain0o0/'" id="ko-fi" class="interactionOption">Ko-Fi</button>
+          <br>
+          <button id="backToRoot" class="interactionOption" onclick="showShowHideHide('rootMenu', 'rootDialogue', 'exitMenu2', 'exitDialogue')">Back</button>
+        </div>
 	    </div>
-	    <div id="interact">
-        <div id="rootMenu">
+	    <div id="div30" style="display: block;">
+        <div class="interaction" id="rootMenu" style="display: block;">
           <button id="buy" class="interactionOption">Buy</button>
           <br>
           <button id="buy" class="interactionOption">Sell</button>
           <br>
           <button id="talk" class="interactionOption">Talk</button>
           <br>
-          <button id="exit" class="interactionOption">Exit</button>
+          <button id="exit" class="interactionOption" onclick="showShowHideHide('exitMenu1', 'exitDialogue', 'rootMenu', 'rootDialogue')">Exit</button>
         </div>
-        <div id="exitMenu1">
-          <button id="home" class="interactionOption">Home</button>
-          <br>
-          <button id="redrain0o0Page" class="interactionOption">RedRain0o0</button>
-          <br>
-          <button id="projects" class="interactionOption">Projects</button>
-          <br>
-          <button id="nextExitMenu" class="interactionOption">Next</button>
+        <div class="dialogue" id="exitDialogue" style="display: none;">
+	    	  <p class="dialogueText">*¾bOI!</p>
         </div>
-        <div id="exitMenu2">
-          <button id="gallery" class="interactionOption">Gallery</button>
-          <br>
-          <button id="discord" class="interactionOption">Discord</button>
-          <br>
-          <button id="ko-fi" class="interactionOption">Ko-Fi</button>
-          <br>
-          <button id="backToRoot" class="interactionOption">Back</button>
-        </div>
-        <p id="money" class="dialogueText">IDKLOL$</h>
+        
+        <!--p id="money" class="dialogueText">IDKLOL$</h-->
 	    </div>
 	  </feature>
   </body>
