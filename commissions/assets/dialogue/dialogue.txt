@@ -1,0 +1,37 @@
+FIRST OPEN:
+* Hello, welcome to my shop!
+* I've a few things on sale, feel free to look around.
+
+ROOT MESSAGE:
+* 
+
+BUY:
+Watcha' looking for?
+
+Sorry, all my Commission slots are taken. Come back when I have some free!
+
+SELL:
+* Oh, sorry, I dont buy off of people.
+* This shop was set up because I'm broke and need money, its not in the budget for me to accept others deals.
+
+TALK:
+What's on your mind?
+
+Credits:
+* Oh, the shop?
+* Sure, I can give a run down real quick!
+
+* [Undertale](https://undertale.com/) is a game by Toby Fox, and the inspiration for this shop.
+* [Typewritten Text](https://github.com/Auroratide/typewritten-text) is made by AuroraTide.
+* Shop is a song by Toby Fox.
+* Everything else was made by me!
+
+
+
+
+EXIT:
+Leaving so soon?
+
+* See you around!
+* Be sure to come back some time.
+
