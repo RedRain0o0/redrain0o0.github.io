@@ -9,6 +9,11 @@ html, body {
   src: url('assets/fonts/determination-mono.ttf');
 }
 
+.dialogueText .typewritten-text_character::after,
+.dialogueText .typewritten-text_start::after {
+  border-right: none;
+}
+
 feature {
   border: 40px solid transparent;
   border-image: url("assets/sprites/background/border.png") 32 round;
@@ -71,7 +76,7 @@ feature {
   width: 100%;
   max-height: 50%;
   max-width: 100%;
-  border: 5px solid #fff;
+  border: 10px solid #fff;
 }
 
 #div70 {
@@ -87,18 +92,8 @@ feature {
   width: 70%;
   max-height: 50%;
   max-width: 70%;
-  border: 5px solid #fff;
-}
-
-.dialogue {
-  word-wrap: break-word;
-  text-indent: -2em;
-  margin: 20px;
-  margin-top: 20px;
-  padding-left: 40px;
-  padding-top: 0%;
-  max-height: 100%;
-  max-width: 100%;
+  border: 10px solid #fff;
+  border-right-style: none;
 }
 
 #div30 {
@@ -114,7 +109,34 @@ feature {
   width: 30%;
   max-height: 50%;
   max-width: 30%;
-  border: 5px solid #fff;
+  border: 10px solid #fff;
+}
+
+#divPop {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  text-align: left;
+  background-color: #000;
+  left: 70%;
+  height: 30%;
+  width: 30%;
+  max-height: 30%;
+  max-width: 30%;
+  border: 10px solid #fff;
+  border-bottom-style: none;
+}
+
+.dialogue {
+  word-wrap: break-word;
+  text-indent: -2em;
+  margin: 20px;
+  margin-top: 20px;
+  padding-left: 40px;
+  padding-top: 0%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .interaction {
@@ -138,11 +160,18 @@ feature {
 
 #money {
   position: absolute;
-  bottom: 0%;
-  left: 10%;
+  bottom: 100px;
+  left: 100px;
 }
 
 .dialogueText {
+  font-size: 30px;
+  max-width: 95%;
+  color: #fff;
+  font-family: 'DeterminationMono';
+}
+
+.staticText {
   font-size: 30px;
   max-width: 95%;
   color: #fff;

@@ -2,6 +2,76 @@
 <html>
 
   <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://unpkg.com/@auroratide/typewritten-text/lib/style.css" />
+  <script type="module" src="https://unpkg.com/@auroratide/typewritten-text/lib/define.js"></script>
+  <script>
+    const elem = document.querySelector('typewritten-text')
+
+    function firstOpen() {
+      var dia1 = document.getElementById('firstDialogue1');
+      var dia2 = document.getElementById('firstDialogue2');
+      var wait = dia1.length * 50 + 200;
+      var music = document.getElementById('music');
+      music.play();
+      dia1.paused = false;
+      setTimeout(() => dia2.paused = false, wait);
+    }
+
+    function progressDialogue(show, hide) {
+      var toShow = document.getElementById(show);
+      var toHide = document.getElementById(hide);
+      toShow.style.display = "block";
+      toHide.style.display = "none";
+    }
+    function div30Menu(show1, show2, hide1, hide2, div70Text, div30Text) {
+      var toShow1 = document.getElementById(show1);
+      var toShow2 = document.getElementById(show2);
+      var toHide1 = document.getElementById(hide1);
+      var toHide2 = document.getElementById(hide2);
+      var runDiv70Text = document.getElementById(div70Text);
+      var runDiv30Text = document.getElementById(div30Text);
+      toShow1.style.display = "block";
+      toShow2.style.display = "block";
+      toHide1.style.display = "none";
+      toHide2.style.display = "none";
+      runDiv70Text.letterInterval = 50;
+      runDiv70Text.paused = false;
+      runDiv30Text.letterInterval = 0;
+      runDiv30Text.paused = false;
+    }
+    function div70Menu(show1, show2, hide1, hide2, div30Text, div70Text) {
+      var toShow1 = document.getElementById(show1);
+      var toShow2 = document.getElementById(show2);
+      var toHide1 = document.getElementById(hide1);
+      var toHide2 = document.getElementById(hide2);
+      var runDiv30Text = document.getElementById(div30Text);
+      var runDiv70Text = document.getElementById(div70Text);
+      toShow1.style.display = "block";
+      toShow2.style.display = "block";
+      toHide1.style.display = "none";
+      toHide2.style.display = "none";
+      runDiv30Text.letterInterval = 50;
+      runDiv30Text.paused = false;
+      runDiv70Text.letterInterval = 0;
+      runDiv70Text.paused = false;
+    }
+    function activeDiv100() {
+      var div30 = document.getElementById('div30');
+      var div70 = document.getElementById('div70');
+      var div100 = document.getElementById('div100');
+      div30.style.display = "none";
+      div70.style.display = "none";
+      div100.style.display = "block";
+    }
+    function unactiveDiv100() {
+      var div30 = document.getElementById('div30');
+      var div70 = document.getElementById('div70');
+      var div100 = document.getElementById('div100');
+      div30.style.display = "block";
+      div70.style.display = "block";
+      div100.style.display = "none";
+    }
+  </script>
 
   <!-- Discord embed -->
   <meta content="RedRain0o0's Website | Commissions" property="og:title" />
@@ -14,44 +84,14 @@
     <title>
       RedRain0o0 | Commissions
     </title>
+    <link rel="icon" type="image/png" href="assets/sprites/soul.png">
   </head>
 
-  <body>
+  <body onload="firstOpen()">
+    <audio id="music" loop>
+      <source src="assets/sounds/mus_shop.ogg" type="audio/ogg">
+    </audio>
 		<feature>
-      <script>
-        function progressDialogue(show, hide) {
-          var toShow = document.getElementById(show);
-          var toHide = document.getElementById(hide);
-          toShow.style.display = "block";
-          toHide.style.display = "none";
-        }
-        function showShowHideHide(show1, show2, hide1, hide2) {
-          var toShow1 = document.getElementById(show1);
-          var toShow2 = document.getElementById(show2);
-          var toHide1 = document.getElementById(hide1);
-          var toHide2 = document.getElementById(hide2);
-          toShow1.style.display = "block";
-          toShow2.style.display = "block";
-          toHide1.style.display = "none";
-          toHide2.style.display = "none";
-        }
-        function activeDiv100() {
-          var div30 = document.getElementById('div30');
-          var div70 = document.getElementById('div70');
-          var div100 = document.getElementById('div100');
-          div30.style.display = "none";
-          div70.style.display = "none";
-          div100.style.display = "block";
-        }
-        function unactiveDiv100() {
-          var div30 = document.getElementById('div30');
-          var div70 = document.getElementById('div70');
-          var div100 = document.getElementById('div100');
-          div30.style.display = "block";
-          div70.style.display = "block";
-          div100.style.display = "none";
-        }
-      </script>
 	    <div id="shopFace">
 	    	<div id="redrain0o0">
           <img class="faceSprite" id="temmieidle" src="assets/sprites/shop/temmieidle.png">
@@ -64,10 +104,15 @@
           <p class="dialogueText">*¾dis shop is undr construction, pls come back l8r</p>
         </div>
 	    </div>
+	    <div id="divPop" style="top: 50%;">
+      </div>
 	    <div id="div70" style="display: block;">
-        <div class="dialogue" id="rootDialogue" style="display: block;">
-	    	  <p class="dialogueText">*¾hOI!</p>
-          <p class="dialogueText">*¾dis shop is undr construction, pls come back l8r</p>
+        <div class="dialogue" id="firstDialogue" style="display: block;">
+	    	  <p class="dialogueText"><typewritten-text id="firstDialogue1" letter-interval="50" paused>*¾hOI!</typewritten-text></p>
+          <p class="dialogueText"><typewritten-text id="firstDialogue2" letter-interval="50" paused>*¾dis shop is undr construction, pls come back l8r</typewritten-text></p>
+        </div>
+        <div class="dialogue" id="rootDialogue" style="display: none;">
+	    	  <p class="dialogueText"><typewritten-text id="rootDialogue1" letter-interval="50" paused>*¾u shouldnt b here</typewritten-text></p>
         </div>
         <div id="exitMenu1" style="display: none;">
           <button onclick="location.href='https://redrain0o0.github.io/'" id="home" class="interactionOption">Home</button>
@@ -85,24 +130,33 @@
           <br>
           <button onclick="location.href='https://ko-fi.com/redrain0o0/'" id="ko-fi" class="interactionOption">Ko-Fi</button>
           <br>
-          <button id="backToRoot" class="interactionOption" onclick="showShowHideHide('rootMenu', 'rootDialogue', 'exitMenu2', 'exitDialogue')">Back</button>
+          <button id="backToRoot" class="interactionOption" onclick="div30Menu('rootDialogue', 'rootMenu', 'exitMenu2', 'exitDialogue', 'rootDialogue1', 'exitDialogue1')">Back</button>
         </div>
 	    </div>
 	    <div id="div30" style="display: block;">
-        <div class="interaction" id="rootMenu" style="display: block;">
+        <div class="interaction" id="firstMenu" style="display: block;">
           <button id="buy" class="interactionOption">Buy</button>
           <br>
-          <button id="buy" class="interactionOption">Sell</button>
+          <button id="sell" class="interactionOption">Sell</button>
           <br>
           <button id="talk" class="interactionOption">Talk</button>
           <br>
-          <button id="exit" class="interactionOption" onclick="showShowHideHide('exitMenu1', 'exitDialogue', 'rootMenu', 'rootDialogue')">Exit</button>
+          <button id="exit" class="interactionOption" onclick="div70Menu('exitMenu1', 'exitDialogue', 'firstMenu', 'firstDialogue', 'exitDialogue1')">Exit</button>
+        </div>
+        <div class="interaction" id="rootMenu" style="display: none;">
+          <button id="buy" class="interactionOption">Buy</button>
+          <br>
+          <button id="sell" class="interactionOption">Sell</button>
+          <br>
+          <button id="talk" class="interactionOption">Talk</button>
+          <br>
+          <button id="exit" class="interactionOption" onclick="div70Menu('exitMenu1', 'exitDialogue', 'rootMenu', 'rootDialogue', 'exitDialogue1', 'rootDialogue1')">Exit</button>
         </div>
         <div class="dialogue" id="exitDialogue" style="display: none;">
-	    	  <p class="dialogueText">*¾bOI!</p>
+	    	  <p class="dialogueText"><typewritten-text id="exitDialogue1" letter-interval="50" paused>bOI!</typewritten-text></p>
         </div>
         
-        <!--p id="money" class="dialogueText">IDKLOL$</h-->
+        <id="money" class="staticText">IDKLOL$</h>
 	    </div>
 	  </feature>
   </body>
