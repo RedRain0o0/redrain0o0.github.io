@@ -158,6 +158,23 @@ feature {
   border: none;
 }
 
+.soul {
+  image-rendering: pixelated;
+  width: 27px;
+}
+
+#div30Soul {
+  position: absolute;
+  left: 20px;
+  top: 30px
+}
+
+#div70Soul {
+  position: absolute;
+  left: 20px;
+  top: 30px
+}
+
 #money {
   position: absolute;
   bottom: 100px;
