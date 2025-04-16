@@ -16,7 +16,7 @@ html, body {
 
 feature {
   border: 40px solid transparent;
-  border-image: url("assets/sprites/background/border.png") 32 round;
+  border-image: url("assets/sprites/background/border.png") 64 round;
   image-rendering: pixelated;
   width: 100vw;
   height: 75vw;
@@ -53,14 +53,12 @@ feature {
 }
 
 #temmieidle {
-  transform: translate(-60%, -100px);
-  width: 273px;
-  height: 255px;
+  /*transform: translate(-60%, -100px);*/
+  height: 50%;
 }
 
 #temmiebox {
-  width: 327px;
-  height: 153px;
+  height: 25%;
 }
 
 #div100 {
@@ -156,6 +154,23 @@ feature {
   font-family: 'DeterminationMono';
   background-color: #00000000;
   border: none;
+}
+
+.soul {
+  image-rendering: pixelated;
+  width: 27px;
+}
+
+#div30Soul {
+  position: absolute;
+  left: 20px;
+  top: 30px
+}
+
+#div70Soul {
+  position: absolute;
+  left: 20px;
+  top: 30px
 }
 
 #money {
