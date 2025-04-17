@@ -1,7 +1,6 @@
 Works on my machine!
 Have you tried turning it off and on again?
 Third test message idk man!
-404: Splash not found!
 Hosted on GitHub!
 Built Ford tough!
 HTML4 + 1 = 5!
@@ -12,6 +11,7 @@ That just makes you a beta cuck.
 Welcome to Tilted Towers!
 HATSUNE MIKU?!
 Fuck you Wix!
+Fuck you Squarespace!
 No one will believe you.
 Press [Space] to jump!
 Don't kick the server!
@@ -25,8 +25,8 @@ I swear I'll get back to LCMC eventually!
 Webdev is just more fun right now!
 This is a secret message that is only visible if you look at the splashes.txt. I killed a man on October 8th, 1899. No one ever found the body.
 This is a really long message for no reason! I just want to see how it will render on the website lmao!
-Fuck you Squarespace!
 Shoutout to Shar for inspiring me to tackle this page!
+404: Splash not found!
 418: I'm a teapot!
 Also visit https://marlee-goat.neocities.org!
 Also visit https://www.beegirl.gay!
