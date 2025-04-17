@@ -1,28 +1,17 @@
 html, body {
-  background-color: #909090;
+  background-color: #fff;
   text-align: center;
   height: 100%;
   width: 100%;
 }
 
-h2{
-  text-align: center;
-  font-family: "Comic Sans MS";
+@font-face {
+  font-family: 'MinecraftRegular';
+  src: url('assets/fonts/minecraft-regular.otf');
 }
-/* @font-face {*/
-	/* font-family: 'Roboto'; */
-	/* font-style: normal; */
-	/* font-weight: 400; */
-	/* src: local('Roboto'), local('Roboto-Regular'), */
-		/* url('/assets/fonts/roboto/Roboto-Regular.woff2') format('woff2'), */
-		/* url('/assets/fonts/roboto/Roboto-Regular.woff') format('woff'), */
-		/* url('/assets/fonts/roboto/Roboto-Regular.ttf') format('truetype'); */
-  
-/* body { */
-	/* font-family: "Roboto", serif; */
 
-	/* height: 100vh; */
-
-	/* color: #FFF7C0; */
-	/* background-color: #484d54; */
-/* } */
+#splashText {
+  font-family: "MinecraftRegular";
+	font-size: 24px;
+	color: #ff0;
+}s
