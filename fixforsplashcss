@@ -1,0 +1,24 @@
+#splashText {
+  position: absolute;
+  top: 115px;
+  left: 50%;
+  white-space: nowrap;
+  font-family: "MinecraftRegular";
+  font-size: 24px;
+}
+
+#splashTextText {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate(-50%, -50%);
+  color: #ff0;
+}
+
+#splashTextShadow {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transform: translate(-50%, -50%);
+  color: #880;
+}
