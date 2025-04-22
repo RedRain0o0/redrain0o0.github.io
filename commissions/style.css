@@ -15,7 +15,7 @@ html, body {
 }
 
 feature {
-  border: 40px solid transparent;
+  border: 30px solid transparent;
   border-image: url("assets/sprites/background/border.png") 64 round;
   image-rendering: pixelated;
   width: 100vw;
@@ -137,6 +137,16 @@ feature {
   max-width: 100%;
 }
 
+.dialogueNOAS {
+  word-wrap: break-word;
+  margin: 20px;
+  margin-top: 20px;
+  padding-left: calc(40px-2em);
+  padding-top: 0%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .interaction {
   word-wrap: break-word;
   margin: 20px;
@@ -180,6 +190,13 @@ feature {
 }
 
 .dialogueText {
+  font-size: 30px;
+  max-width: 95%;
+  color: #fff;
+  font-family: 'DeterminationMono';
+}
+
+.dialogueTextNOAS {
   font-size: 30px;
   max-width: 95%;
   color: #fff;

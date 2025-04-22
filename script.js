@@ -31,7 +31,6 @@ function myMove() {
       var f = 1.8 - Math.abs(Math.sin(ms * 6.2831855) * 0.1);
       f = f * 100.0 / ((document.getElementById("splashTextText").innerHTML.length * 5) + 32);
       //console.log(document.getElementById("splashTextText").innerHTML.length);
-      console.log(f);
       elem.style.transform = "translate(-50%, -50%) scale("+f+") rotate(-20deg)";
       pos++;
     }
