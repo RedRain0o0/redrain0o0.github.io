@@ -232,7 +232,7 @@
           <!--style="position: absolute; left: 10px; top: 20px;"-->
           <button onmouseover="heartToButton30(this)" onmouseover="heartToButton30(this)" id="buy" class="interactionOption">Buy</button>
           <br>
-          <button onmouseover="heartToButton30(this)" onmouseover="heartToButton30(this)" id="sell" class="interactionOption" <!--onclick="activeDiv100('sellDialogue')"-->>Sell</button>
+          <button onmouseover="heartToButton30(this)" onmouseover="heartToButton30(this)" id="sell" class="interactionOption" !--onclick="activeDiv100('sellDialogue')"-->Sell</button>
           <br>
           <button onmouseover="heartToButton30(this)" id="talk" class="interactionOption" onclick="div70Menu('talkMenu1', 'talkDialogue', 'firstMenu', 'firstDialogue', 'talkDialogue1')">Talk</button>
           <br>
@@ -248,11 +248,11 @@
           <button onmouseover="heartToButton30(this)" id="exit" class="interactionOption" onclick="div70Menu('exitMenu1', 'exitDialogue', 'rootMenu', 'rootDialogue', 'exitDialogue1')">Exit</button>
         </div>
         <img class="soul" id="div30Soul" src="assets/sprites/soul.png" style="display: block;">
-	<div class="dialogue" id="talkDialogue" style="display: none;">
-	  <p class="dialogueText"><typewritten-text nextchar="talkTick()" id="talkDialogue1" letter-interval="50" paused>whadya wans 2 talk abt?</typewritten-text></p>
+	<div class="dialogueNOAS" id="talkDialogue" style="display: none;">
+	  <p class="dialogueTextNOAS"><typewritten-text nextchar="talkTick()" id="talkDialogue1" letter-interval="50" paused>whadya wans 2 talk abt?</typewritten-text></p>
         </div>
-        <div class="dialogue" id="exitDialogue" style="display: none;">
-	  <p class="dialogueText"><typewritten-text nextchar="talkTick()" id="exitDialogue1" letter-interval="50" paused>bOI!</typewritten-text></p>
+        <div class="dialogueNOAS" id="exitDialogue" style="display: none;">
+	  <p class="dialogueTextNOAS"><typewritten-text nextchar="talkTick()" id="exitDialogue1" letter-interval="50" paused>bOI!</typewritten-text></p>
         </div>
         <!--id="money" class="staticText">IDKLOL$</h-->
       </div>
