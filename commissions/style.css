@@ -15,7 +15,7 @@ html, body {
 }
 
 feature {
-  border: 40px solid transparent;
+  border: 30px solid transparent;
   border-image: url("assets/sprites/background/border.png") 64 round;
   image-rendering: pixelated;
   width: 100vw;
