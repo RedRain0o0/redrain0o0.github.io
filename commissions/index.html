@@ -175,13 +175,13 @@
     <audio id="music" loop>
       <source src="assets/sounds/mus_shop.ogg" type="audio/ogg">
     </audio>
-		<feature>
-	    <div id="shopFace">
-	    	<div id="redrain0o0">
+    <feature>
+      <div id="shopFace">
+	      <div id="redrain0o0">
           <img class="faceSprite" id="temmieidle" src="assets/sprites/shop/temmieidle.png">
           <img class="faceSprite" id="temmiebox" src="assets/sprites/shop/temmiebox.png">
         </div>
-	    </div>
+      </div>
 	    <div id="div100" style="display: none;">
         <div class="dialogue" id="sellDialogue">
 	    	  <p class="dialogueText"><typewritten-text nextchar="talkTick()" id="sellDialogue1" letter-interval="50" paused>*¾hOI!</typewritten-text></p>
@@ -199,33 +199,22 @@
         </div>
         <div class="interaction" id="exitMenu1" style="display: none;">
           <button onmouseover="heartToButton70(this)" onclick="location.href='https://redrain0o0.github.io/'" id="home" class="interactionOption">Home</button>
-        <div class="interaction" id="exitMenu1" style="display: none;">
-          <button onmouseover="heartToButton70(this)" onclick="location.href='https://redrain0o0.github.io/'" id="home" class="interactionOption">Home</button>
           <br>
-          <button onmouseover="heartToButton70(this)" onclick="location.href='https://redrain0o0.github.io/RedRain0o0'" id="redrain0o0Page" class="interactionOption">RedRain0o0</button>
           <button onmouseover="heartToButton70(this)" onclick="location.href='https://redrain0o0.github.io/RedRain0o0'" id="redrain0o0Page" class="interactionOption">RedRain0o0</button>
           <br>
           <button onmouseover="heartToButton70(this)" onclick="location.href='https://redrain0o0.github.io/projects'" id="projects" class="interactionOption">Projects</button>
-          <button onmouseover="heartToButton70(this)" onclick="location.href='https://redrain0o0.github.io/projects'" id="projects" class="interactionOption">Projects</button>
           <br>
-          <button onmouseover="heartToButton70(this)" id="nextExitMenu" class="interactionOption" onclick="progressDialogue('exitMenu2', 'exitMenu1')">Next</button>
           <button onmouseover="heartToButton70(this)" id="nextExitMenu" class="interactionOption" onclick="progressDialogue('exitMenu2', 'exitMenu1')">Next</button>
         </div>
         <div class="interaction" id="exitMenu2" style="display: none;">
           <button onmouseover="heartToButton70(this)" onclick="location.href='https://redrain0o0.github.io/the-gallery'" id="gallery" class="interactionOption">Gallery</button>
-        <div class="interaction" id="exitMenu2" style="display: none;">
-          <button onmouseover="heartToButton70(this)" onclick="location.href='https://redrain0o0.github.io/the-gallery'" id="gallery" class="interactionOption">Gallery</button>
           <br>
-          <button onmouseover="heartToButton70(this)" onclick="location.href='https://redrain0o0.github.io/'" id="discord" class="interactionOption">Discord</button>
           <button onmouseover="heartToButton70(this)" onclick="location.href='https://redrain0o0.github.io/'" id="discord" class="interactionOption">Discord</button>
           <br>
           <button onmouseover="heartToButton70(this)" onclick="location.href='https://ko-fi.com/redrain0o0/'" id="ko-fi" class="interactionOption">Ko-Fi</button>
-          <button onmouseover="heartToButton70(this)" onclick="location.href='https://ko-fi.com/redrain0o0/'" id="ko-fi" class="interactionOption">Ko-Fi</button>
           <br>
-          <button onmouseover="heartToButton70(this)" id="backToRoot" class="interactionOption" onclick="div30Menu('rootDialogue', 'rootMenu', 'exitMenu2', 'exitDialogue', 'rootDialogue1')">Back</button>
           <button onmouseover="heartToButton70(this)" id="backToRoot" class="interactionOption" onclick="div30Menu('rootDialogue', 'rootMenu', 'exitMenu2', 'exitDialogue', 'rootDialogue1')">Back</button>
         </div>
-        <img class="soul" id="div70Soul" src="assets/sprites/soul.png" style="display: none;">
         <img class="soul" id="div70Soul" src="assets/sprites/soul.png" style="display: none;">
 	    </div>
 	    <div id="div30" style="display: block;">
@@ -236,31 +225,23 @@
           <button onmouseover="heartToButton30(this)" onmouseover="heartToButton30(this)" id="sell" class="interactionOption" onclick="activeDiv100('sellDialogue')">Sell</button>
           <br>
           <button onmouseover="heartToButton30(this)" id="talk" class="interactionOption">Talk</button>
-          <button onmouseover="heartToButton30(this)" id="talk" class="interactionOption">Talk</button>
           <br>
-          <button onmouseover="heartToButton30(this)" id="exit" class="interactionOption" onclick="div70Menu('exitMenu1', 'exitDialogue', 'firstMenu', 'firstDialogue', 'exitDialogue1')">Exit</button>
           <button onmouseover="heartToButton30(this)" id="exit" class="interactionOption" onclick="div70Menu('exitMenu1', 'exitDialogue', 'firstMenu', 'firstDialogue')">Exit</button>
         </div>
         <div class="interaction" id="rootMenu" style="display: none;">
           <button onmouseover="heartToButton30(this)" id="buy" class="interactionOption">Buy</button>
-          <button onmouseover="heartToButton30(this)" id="buy" class="interactionOption">Buy</button>
           <br>
-          <button onmouseover="heartToButton30(this)" id="sell" class="interactionOption">Sell</button>
           <button onmouseover="heartToButton30(this)" id="sell" class="interactionOption">Sell</button>
           <br>
           <button onmouseover="heartToButton30(this)" id="talk" class="interactionOption">Talk</button>
-          <button onmouseover="heartToButton30(this)" id="talk" class="interactionOption">Talk</button>
           <br>
-          <button onmouseover="heartToButton30(this)" id="exit" class="interactionOption" onclick="div70Menu('exitMenu1', 'exitDialogue', 'rootMenu', 'rootDialogue', 'exitDialogue1')">Exit</button>
           <button onmouseover="heartToButton30(this)" id="exit" class="interactionOption" onclick="div70Menu('exitMenu1', 'exitDialogue', 'rootMenu', 'rootDialogue', 'exitDialogue1')">Exit</button>
         </div>
-        <img class="soul" id="div30Soul" src="assets/sprites/soul.png" style="display: block;">
         <img class="soul" id="div30Soul" src="assets/sprites/soul.png" style="display: block;">
         <div class="dialogue" id="exitDialogue" style="display: none;">
 	    	  <p class="dialogueText"><typewritten-text nextchar="talkTick()" id="exitDialogue1" letter-interval="50" paused>bOI!</typewritten-text></p>
         </div>
         
-        <!--id="money" class="staticText">IDKLOL$</h-->
         <!--id="money" class="staticText">IDKLOL$</h-->
 	    </div>
 	  </feature>
