@@ -14,6 +14,11 @@ html, body {
   border-right: none;
 }
 
+.dialogueTextNOAS .typewritten-text_character::after,
+.dialogueTextNOAS .typewritten-text_start::after {
+  border-right: none;
+}
+
 feature {
   border: 30px solid transparent;
   border-image: url("assets/sprites/background/border.png") 64 round;
