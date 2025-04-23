@@ -136,13 +136,15 @@
       dialogue.reset();
       dialogue.paused = false;
     }
-    function unactiveDiv100() {
+    function unactiveDiv100(dialogue) {
       var div30 = document.getElementById('div30');
       var div70 = document.getElementById('div70');
       var div100 = document.getElementById('div100');
+      var dialogue = document.getElementById(dialogue);
       div30.style.display = "block";
       div70.style.display = "block";
       div100.style.display = "none";
+      dialogue.reset();
     }
   </script>
 
@@ -171,15 +173,15 @@
           <img class="faceSprite" id="temmiebox" src="assets/sprites/shop/temmiebox.png">
         </div>
       </div>
+      <div id="divPop" style="top: 50%;">
+      </div>
       <div id="div100" style="display: none;">
         <div class="dialogue" id="sellDialogue1">
 	  <p class="dialogueText" onclick="progressDialogue('sellDialogue2', 'sellDialogue1')"><typewritten-text nextchar="talkTick()" id="sellDialogueT1" letter-interval="50" paused>*¾sorz, u cant sell here</typewritten-text></p>
         </div>
         <div class="dialogue" id="sellDialogue2">
-	  <p class="dialogueText" onclick="unactiveDiv100()"><typewritten-text nextchar="talkTick()" id="sellDialogueT1" letter-interval="50" paused>*¾mab anoder store will buy from u!</typewritten-text></p>
+	  <p class="dialogueText" onclick="unactiveDiv100('sellDialogueT1')"><typewritten-text nextchar="talkTick()" id="sellDialogueT1" letter-interval="50" paused>*¾mab anoder store will buy from u!</typewritten-text></p>
         </div>
-      </div>
-      <div id="divPop" style="top: 50%;">
       </div>
       <div id="div70" style="display: block;">
         <div class="dialogue" id="firstDialogue" style="display: block;">
