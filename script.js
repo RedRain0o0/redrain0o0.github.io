@@ -27,7 +27,7 @@ function myMove() {
       clearInterval(id);
       myMove();
     } else {
-      ms = pos*10/1000;
+      ms = Date.now()%1000;
       var f = 1.8 - Math.abs(Math.sin(ms * 6.2831855) * 0.1);
       f = f * 100.0 / ((document.getElementById("splashTextText").innerHTML.length * 5) + 32);
       //console.log(document.getElementById("splashTextText").innerHTML.length);
