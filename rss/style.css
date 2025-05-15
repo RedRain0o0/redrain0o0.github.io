@@ -1,0 +1,8 @@
+#knob {
+  background-color: gray;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  transform: rotate(0deg);
+}
